@@ -1,0 +1,17 @@
+<div class="container col-sm-8 col-md-6 col-lg-4">
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Insira seu nome" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Insira seu email" ngModel email required>
+    </div>
+    <div class="form-group">
+      <label for="cpf">CPF</label>
+      <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Insira seu CPF" ngModel required>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+  </form>
+</div>
