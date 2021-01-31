@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { PainelUsuarioComponent } from './painel-usuario/painel-usuario.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [	
     AppComponent,
-      CadastroComponent,
-      PainelUsuarioComponent
+    CadastroComponent,
+    PainelUsuarioComponent,
+    FooterComponent,
+    HeaderComponent,
    ],
   imports: [
     BrowserModule,
