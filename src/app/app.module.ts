@@ -5,16 +5,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { PainelUsuarioComponent } from './painel-usuario/painel-usuario.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
-      CadastroComponent
-   ],
+    CadastroComponent,
+    PainelUsuarioComponent,
+    FooterComponent,
+    HeaderComponent,
+    HomeComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
