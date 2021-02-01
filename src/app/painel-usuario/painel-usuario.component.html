@@ -1,20 +1,43 @@
-<div class="row justify-content-center">
-    <table>
-        <th>
-            <button type="submit" class="btn btn-success">
-                Criar conta</button>
-        </th>
-        <th>
-            <button type="submit" class="btn btn-danger">
-                Deletar conta</button>
-        </th>
-        <th>
-            <button type="submit" class="btn btn-primary">
-                Visualizar saldo</button>
-        </th>
-        <th>
-            <button type="submit" class="btn btn-warning">
-                Transferir saldo</button>
-        </th>
+<div class="container text-center">
+    
+    <div class="text-right p-1">
+    
+        <button type="submit" class="btn btn-success m-2">
+            Criar conta </button> 
+    
+        <button type="submit" class="btn btn-danger m-2">
+            Deletar conta </button> 
+        
+        <button type="submit" class="btn btn-primary m-2">
+            Visualizar saldo </button> 
+        
+        <button type="submit" class="btn btn-warning m-2">
+            Transferir saldo </button>
+    
+    </div>  
+
+    <table class="table table-hover">
+        <tr>
+            <th> ID </th>
+            <th> CPF </th>
+            <th> Nome </th>
+            <th> Email </th>
+            <th> Banco </th>
+            <th> Ações </th> 
+        </tr>
+
+        <tr *ngFor="let usuario of usuarios">       
+            <td> {{ usuario.id }} </td>
+            <td> {{ usuario.cpf }} </td>
+            <td> {{ usuario.nome }} </td>
+            <td> {{ usuario.email }} </td>
+            <td> {{ usuario.banco }}</td>
+            <td>
+                <button class="btn btn-primary"> Ver detalhes</button>
+            </td>
+        </tr>    
+
     </table>
+
 </div>
+
