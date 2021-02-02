@@ -1,3 +1,4 @@
+import { ClientesComponent } from './clientes/clientes.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroComponent } from './cadastro/cadastro.component';
@@ -13,8 +14,8 @@ const routes: Routes = [{
   path: 'cadastro',
   component: CadastroComponent
 }, {
-  path: 'login',
-  component: LoginComponent
+  path: 'clientes',
+  component: ClientesComponent
 
 }, {
   path: 'painel-usuario',
