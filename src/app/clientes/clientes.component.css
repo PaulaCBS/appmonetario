@@ -1,9 +1,5 @@
 .clientes-container {
-  min-height: 80vh;
-}
-h3 {
-  margin-top: 3rem;
-  text-align: center;
+  min-height: 75vh;
 }
 table {
   margin-top: 2rem;

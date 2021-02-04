@@ -4,10 +4,6 @@
   align-items: center;
   flex-flow: column nowrap;
 }
-h3 {
-  margin-top: 3rem;
-  text-align: center;
-}
 form {
   margin: 1rem 0 ;
 }
