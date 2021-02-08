@@ -1,0 +1,59 @@
+.client-info{
+  display: flex;
+  flex-flow: column wrap;
+}
+.client-info-label{
+  font-weight: 700;
+}
+.account-cards{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+.card{
+  min-height: 19rem;
+  margin: 0 0.5rem;
+  padding: 0;
+}
+.card:first-child{
+  margin-left: 0;
+}
+.card:last-child{
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-header p{
+  margin: 0;
+}
+.account-number{
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.account-type{
+  font-size: 0.7rem;
+}
+.balance{
+  font-weight: 300;
+  font-size: 2.6rem;
+}
+.card-footer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.new-account-btn{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-weight: 700;
+}

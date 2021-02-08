@@ -1,23 +1,27 @@
-<header class="header">
-    <h2>Easy Money</h2>
+<header class="header container-fluid bg-dark">
+    <h1 class="text-center">💰 Easy Money</h1>
+
+    <div class="row nav-container d-flex justify-content-center">
+        <ul class="nav flex-column flex-sm-row text-center">
+            <li>
+                <a class="flex-sm-fill text-sm-center nav-link" 
+                routerLink="" routerLinkActive="ativo" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+            </li>
+            <li>
+                <a class="flex-sm-fill text-sm-center nav-link" 
+                routerLink="/clientes" routerLinkActive="ativo">Clientes</a>
+            </li>
+            <li>
+                <a class="flex-sm-fill text-sm-center nav-link"
+                routerLink="/cadastro" routerLinkActive="ativo">Novo Cliente</a>
+            </li>
+        </ul>
+    </div>
+    <div class="user-container">
+        <p class="user-welcome d-flex flex-column">Boas Vindas, Admin</p>
+        <div class="user-avatar-container">
+            <img src="https://i1.wp.com/infinitumcomm.com.br/wp-content/plugins/userswp/assets/images/no_profile.png?ssl=1" class="user-avatar" alt="avatar do usuário">
+        </div>
+        <button class="logout-btn text-warning">Sair</button>
+    </div>
 </header>
-<div class="row justify-content-center">
-    <ul class="nav flex-column flex-sm-row">
-        <li>
-            <a class="flex-sm-fill text-sm-center nav-link active" 
-            routerLink="" routerLinkActive="home">Home</a>
-        </li>
-        <li>
-            <a class="flex-sm-fill text-sm-center nav-link"
-            routerLink="cadastro" routerLinkActive="ativo">Cadastrar</a>
-        </li>
-        <li>
-        <a class="flex-sm-fill text-sm-center nav-link"
-        routerLink="painel-usuario" routerLinkActive="ativo">Painel do Usuário</a>
-        </li>
-        <li>
-            <a class="flex-sm-fill text-sm-center nav-link"
-            routerLink="login" routerLinkActive>Login</a>
-        </li>
-    </ul>
-</div>

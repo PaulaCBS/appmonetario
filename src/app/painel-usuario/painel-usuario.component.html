@@ -1,43 +1,47 @@
-<div class="container text-center">
+ <div class="container client-info">
+    <h3>Painel do Usuário</h3>
+    <div class="client-name-container">
+        <p class="client-info-label">Cliente</p>
+        <p class="client-name">Fulana de Tal</p>
+    </div>
+    <div class="client-cpf-container">
+        <p class="client-info-label">CPF</p>
+        <p class="client-cpf">123.456.789-01</p>
+    </div>
     
-    <div class="text-right p-1">
+   
+    <div class="accounts-container">
+        <p class="client-info-label">Contas</p>
+        <div class="account-cards">
+            <div class="account-card card col-10 col-md-5 col-lg-3">
+                <div class="card-header bg-dark text-light">
+                    <p class="account-number">Nº 888523485-60</p>
+                    <p class="account-type">Conta Poupança</p>
+                </div>
+                <div class="account-card-info card-body">
+                    <div class="account-balance">
+                        <p class="balance-label">Saldo: </p>
+                        <p class="balance">R$ 1.000,00</p>
+                    </div>
+                </div>
+                <div class="account-card-options card-footer">
+                    <button type="button" class="btn btn-sm btn-block btn-info">
+                        Transferir Saldo 
+                    </button>
     
-        <button type="submit" class="btn btn-success m-2">
-            Criar conta </button> 
+                    <button type="button" class="btn btn-sm btn-block btn-outline-danger">
+                        Encerrar Conta 
+                    </button> 
+                </div>
+            </div>
     
-        <button type="submit" class="btn btn-danger m-2">
-            Deletar conta </button> 
-        
-        <button type="submit" class="btn btn-primary m-2">
-            Visualizar saldo </button> 
-        
-        <button type="submit" class="btn btn-warning m-2">
-            Transferir saldo </button>
-    
-    </div>  
-
-    <table class="table table-hover">
-        <tr>
-            <th> ID </th>
-            <th> CPF </th>
-            <th> Nome </th>
-            <th> Email </th>
-            <th> Banco </th>
-            <th> Ações </th> 
-        </tr>
-
-        <tr *ngFor="let usuario of usuarios">       
-            <td> {{ usuario.id }} </td>
-            <td> {{ usuario.cpf }} </td>
-            <td> {{ usuario.nome }} </td>
-            <td> {{ usuario.email }} </td>
-            <td> {{ usuario.banco }}</td>
-            <td>
-                <button class="btn btn-primary"> Ver detalhes</button>
-            </td>
-        </tr>    
-
-    </table>
+            <div class="account-card card col-10 col-md-5 col-lg-3">
+                <button type="button" class="new-account-btn btn btn-sm btn-success m-2">
+                    Nova Conta 
+                </button> 
+            </div>
+        </div>
+    </div>
 
 </div>
 

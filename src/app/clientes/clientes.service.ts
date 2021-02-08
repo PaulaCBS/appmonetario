@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
-import { Contas, Usuarios } from './painel-usuario.interfaces';
+import { Contas, Usuarios } from './clientesInterface';
 
 @Injectable({
   providedIn: 'root'
 })
-export class PainelUsuarioService {
+export class ClientesService {
 
   API_URL = environment.API_URL;
 
@@ -21,5 +21,5 @@ export class PainelUsuarioService {
   getContas() {
     return this.http.get<Contas[]>(this.API_URL + '/contas')
   }
-  
+
 }

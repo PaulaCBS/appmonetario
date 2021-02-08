@@ -1,0 +1,19 @@
+.home-container{
+  min-height: 42vw;
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  background: #fff url("../../assets/home.jpg") no-repeat right/contain;
+}
+h2{
+  margin: 3rem 5rem;
+  align-self: flex-start;
+  font-size: 7rem;
+}
+h2 .subtitle{
+  font-size: 3rem;
+}
+.home-img{
+  width: 70%;
+}

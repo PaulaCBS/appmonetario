@@ -1,0 +1,17 @@
+.clientes-container {
+  min-height: 75vh;
+}
+table {
+  margin-top: 2rem;
+}
+.icon-container {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 0.5rem;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.icon {
+  width: 70%;
+}

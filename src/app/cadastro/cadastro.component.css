@@ -1,14 +1,23 @@
-form{
-  margin: 4rem auto ;
+.cadastro-container{
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
 }
-label{
+form {
+  margin: 1rem 0 ;
+}
+label {
   font-weight: 600;
 }
-input.ng-invalid.ng-touched{
+input.ng-invalid.ng-touched {
   border-color: rgb(255, 160, 122);
   box-shadow: 1px 1px 5px rgba(255, 160, 122, 0.7);
 }
-input.ng-valid.ng-touched{
+input.ng-valid.ng-touched {
   border-color: rgb(144, 238, 144);
   box-shadow: 1px 1px 5px rgba(144, 238, 144, 0.7);
+}
+#submit{
+  margin-top: 2rem;
 }

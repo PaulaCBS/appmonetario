@@ -1,5 +1,7 @@
-<div class="container col-sm-8 col-md-6 col-lg-4">
-  <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+<div class="col-12 cadastro-container">
+  <h3>Novo Cliente</h3>
+
+  <form #form="ngForm" (ngSubmit)="onSubmit(form)" class="col-sm-8 col-md-6 col-lg-4">
     <div class="form-group">
       <label for="name">Nome</label>
       <input type="text" class="form-control" id="name" name="name" placeholder="Insira seu nome" ngModel required>
@@ -12,6 +14,6 @@
       <label for="cpf">CPF</label>
       <input type="text" class="form-control" id="cpf" name="cpf" placeholder="Insira seu CPF" ngModel required>
     </div>
-    <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+    <button type="submit" id="submit" class="btn btn-info btn-block">Cadastrar</button>
   </form>
 </div>
