@@ -5,7 +5,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 
-import { PainelUsuarioComponent } from './painel-usuario/painel-usuario.component';
+import { PainelClienteComponent } from './clientes/painel-cliente/painel-cliente.component';
 
 const routes: Routes = [{
   path: '',
@@ -18,8 +18,8 @@ const routes: Routes = [{
   component: ClientesComponent
 
 }, {
-  path: 'painel-usuario',
-  component: PainelUsuarioComponent
+  path: 'clientes/:id',
+  component: PainelClienteComponent
 }];
 
 @NgModule({

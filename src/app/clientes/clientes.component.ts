@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { take } from 'rxjs/operators';
-import { Usuarios } from './clientesInterface';
+import { Usuarios } from './clientes.interface';
 import { ClientesService } from './clientes.service';
 
 @Component({
@@ -42,4 +42,7 @@ export class ClientesComponent implements OnInit {
     console.error(error);
   }
 
+  verDetalhes(idUsuario: number) {
+    this.router.navigate([`clientes/${idUsuario}`]);
+  }
 }
