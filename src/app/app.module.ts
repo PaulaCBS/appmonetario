@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
-import { PainelUsuarioComponent } from './painel-usuario/painel-usuario.component';
+import { PainelClienteComponent } from './clientes/painel-cliente/painel-cliente.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
@@ -17,7 +17,7 @@ import { ClientesComponent } from './clientes/clientes.component';
   declarations: [		
     AppComponent,
     CadastroComponent,
-    PainelUsuarioComponent,
+    PainelClienteComponent,
     FooterComponent,
     HeaderComponent,
     HomeComponent,

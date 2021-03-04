@@ -1,27 +1,64 @@
-# Appmonetario
+# <p align="center"> :bank: Easy Money :moneybag: </p>
+Desafio de Angular da We Can Code Academy cujo objetivo era desenvolver o front end de uma aplicação bancária para o gestor cadastrar clientes do banco, obter informações detalhadas das contas e realizar transações financeiras.  
+O back end deveria ser simulado criando uma API fake com JSON Server.
+  
+• [Funcionalidades](#funcionalidades-construction)
+• [Layout](#layout-art)
+• [Pré-requisitos](#pré-requisitos-warning)
+• [Bibliotecas instaladas](#bibliotecas-instaladas-books)
+• [Executando a aplicação](#executando-a-aplicação-arrow_forward)
+• [Licença](#licença-mit-lock)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+## Funcionalidades :construction:  
+- [ ] Cadastro de clientes  
+- [x] Detalhamento de contas  
+- [ ] Transferência de saldo bancário  
+- [x] Fake REST API com JSON Server  
 
-## Development server
+## Layout :art:  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Home | Clientes | Dados da Conta | Cadastro
+:---:|:--------:|:--------------:|:--------:
+<img src="src/assets/screenshots/home.png" width="200"> | <img src="src/assets/screenshots/clientes.png" width="200"> | <img src="src/assets/screenshots/detalhes-cliente.png" width="200"> | <img src="src/assets/screenshots/cadastrar-cliente.png" width="200">  
 
-## Code scaffolding
+## Pré-requisitos :warning: 
+- [Angular CLI ^ 11.1.2](https://cli.angular.io/)  
+- [Nodejs ^ 13.7.0](https://nodejs.org/en/)  
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Bibliotecas instaladas :books:  
+- [Bootstrap](https://getbootstrap.com/)  
+- [JSON Server](https://www.npmjs.com/package/json-server)  
 
-## Build
+## Executando a aplicação :arrow_forward:  
+1. Clone o projeto  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    ```
+    git clone https://github.com/PaulaCBS/appmonetario.git  
+    ```
 
-## Running unit tests
+2. Instale as dependências  
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```
+    npm install -g @angular/cli  
 
-## Running end-to-end tests
+    npm install -g json-server  
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    npm install bootstrap  
+    ```
 
-## Further help
+3. Inicie a aplicação  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+    ```
+    ng serve  
+
+    json-server --watch src/assets/data/db.json  
+    ```
+
+4. Navegue para os localhosts do projeto  
+
+    Front end: [http://localhost:4200/](http://localhost:4200)  
+    Back end: [http://localhost:3000/](http://localhost:3000)  
+
+## Licença MIT :lock:
+
+[Copyright (c) 2021 - PaulaCBS](https://github.com/PaulaCBS/appmonetario/blob/develop/LICENSE)

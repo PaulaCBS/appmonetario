@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PainelUsuarioComponent } from './painel-usuario.component';
+import { PainelClienteComponent } from './painel-cliente.component';
 
-describe('PainelUsuarioComponent', () => {
-  let component: PainelUsuarioComponent;
-  let fixture: ComponentFixture<PainelUsuarioComponent>;
+describe('PainelClienteComponent', () => {
+  let component: PainelClienteComponent;
+  let fixture: ComponentFixture<PainelClienteComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PainelUsuarioComponent ]
+      declarations: [ PainelClienteComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PainelUsuarioComponent);
+    fixture = TestBed.createComponent(PainelClienteComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

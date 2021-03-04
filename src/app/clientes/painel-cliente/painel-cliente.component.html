@@ -1,47 +1,47 @@
- <div class="container client-info">
-    <h3>Painel do Usuário</h3>
+<div class="container client-info">
+    <h3>Dados do Cliente</h3>
     <div class="client-name-container">
         <p class="client-info-label">Cliente</p>
-        <p class="client-name">Fulana de Tal</p>
+        <p class="client-name">
+            {{ usuario.nome }}</p>
     </div>
     <div class="client-cpf-container">
         <p class="client-info-label">CPF</p>
-        <p class="client-cpf">123.456.789-01</p>
+        <p class="client-cpf">
+            {{ usuario.cpf }}</p>
     </div>
-    
-   
+
     <div class="accounts-container">
         <p class="client-info-label">Contas</p>
         <div class="account-cards">
             <div class="account-card card col-10 col-md-5 col-lg-3">
                 <div class="card-header bg-dark text-light">
-                    <p class="account-number">Nº 888523485-60</p>
+                    <p class="account-number">Nº {{ conta.id }}</p>
                     <p class="account-type">Conta Poupança</p>
                 </div>
                 <div class="account-card-info card-body">
                     <div class="account-balance">
                         <p class="balance-label">Saldo: </p>
-                        <p class="balance">R$ 1.000,00</p>
+                        <p class="balance">{{ conta.saldo | currency: "BRL" }}</p>
                     </div>
                 </div>
                 <div class="account-card-options card-footer">
                     <button type="button" class="btn btn-sm btn-block btn-info">
                         Transferir Saldo 
                     </button>
-    
+
                     <button type="button" class="btn btn-sm btn-block btn-outline-danger">
                         Encerrar Conta 
-                    </button> 
+                    </button>
                 </div>
             </div>
-    
+
             <div class="account-card card col-10 col-md-5 col-lg-3">
                 <button type="button" class="new-account-btn btn btn-sm btn-success m-2">
                     Nova Conta 
-                </button> 
+                </button>
             </div>
         </div>
     </div>
 
 </div>
-
